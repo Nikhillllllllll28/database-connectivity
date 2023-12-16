@@ -7,7 +7,7 @@ db = SQLAlchemy(app)
 
 class Contacts(db.Model):
     sno = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(20), unique=False, nullable=True)
+    name = db.Column(db.String(20), unique=False,  nullable=False)
     age = db.Column(db.Integer, unique=False, nullable=False)
     sex = db.Column(db.String(10), unique=False, nullable=False)
 
